@@ -1,0 +1,618 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PROJEKT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fjalla+One&family=Indie+Flower&family=KoHo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Pixels&family=Sedgwick+Ave+Display&family=Sixtyfour&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin:0;
+            font-family: "Lato", sans-serif;
+        }
+        .flex{
+            margin:0;
+            height: 4433px;
+            width: 1440px;
+            background-color: #19191B;
+            display:block;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items:center;
+            flex-direction: column;
+        }
+        .page1{
+            margin:0;
+            height: 956px;
+            width: 1440px;
+            background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
+            background-size:cover;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-wrap: wrap;
+        }
+        .header {
+            height: 113px;
+            width: 1440px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .header a{
+            text-decoration: none;
+            font-size:18px;
+            margin: 40px;
+            color: rgba(255, 255, 255, 0.70);
+        }
+        .main h1{
+            margin-bottom: 20px;
+            font-size:80px;
+            color: #FFF;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 84px; /* 105% */
+
+        }
+        .header h2{
+            color: #FFF;
+            font-family: "Montserrat", sans-serif;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 39.2px */
+        }
+        .main p{
+            font-size:21px;
+            color: rgba(255, 255, 255, 0.70);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 39px; /* 185.714% */
+            letter-spacing: -0.657px;
+        }
+        .button{
+            margin-right:121px;
+            height: 44px;
+            width: 157px;
+            color:white;
+            border-radius: 5px;
+            border: 1px solid #FFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:16px;
+        }
+        .main{
+            margin-top:117px;
+            height: 600px;
+            width: 582px;
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            flex-direction: column;
+        }
+        .main div p{
+            margin:0;
+        }
+        .button2{
+            margin-top:50px;
+            height: 58px;
+            width: 204px;
+            background-color:#5454D4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:20px;
+            color: #FFF;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .favicon {
+            height: 40px;
+            width: 124px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .page2 {
+            margin: 0;
+            height: 1010px;
+            width: 1440px;
+            background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
+            background-size:cover;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            flex-wrap: wrap;
+        }
+        .header1 {
+            height: 140px;
+            width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header1 h1{
+            color:white;
+            font-size:80px;
+        }
+        .header1 h2{
+            font-size:60px;
+            color: #FFF;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 70px; /* 116.667% */
+        }
+        .header1 p {
+            margin-top: -40px;
+            font-size: 21px;
+            color: rgba(255, 255, 255, 0.70);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 39px; /* 185.714% */
+            letter-spacing: -0.657px;
+        }
+        .page3 {
+            margin: 0;
+            height: 1024px;
+            width: 1440px;
+            background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .page3 h2{
+            color: #FFF;
+            text-align: center;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 70px; /* 116.667% */
+        }
+        .box {
+            height: 509px;
+            width: 1116px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .box img{
+            height: 32px;
+            width: 32px;
+        }
+        .box h4{
+            margin-top:20px;
+            margin-bottom:20px;
+            color: #FFF;
+            text-align: center;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.75px;
+        }
+        .box p {
+            color: rgba(255, 255, 255, 0.70);
+            text-align: center;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px; /* 140% */
+            letter-spacing: -0.5px;
+        }
+        .section-one {
+            height: 155px;
+            width: 299px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+        }
+        .icon-one {
+            width: 69px;
+            height: 69px;
+            display: flex;
+            background-color: rgba(84, 84, 212, 0.10);
+            border: 1px solid black;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .section-two {
+            height: 155px;
+            width: 299px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+        }
+        .icon-two {
+            width: 69px;
+            height: 69px;
+            display: flex;
+            background-color: rgba(240, 64, 55, 0.10);
+            border: 1px solid black;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            color:#F04037;
+        }
+        .section-three {
+            height: 155px;
+            width: 299px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+        }
+        .icon-three {
+            width: 69px;
+            height: 69px;
+            display: flex;
+            background-color: rgba(254, 220, 90, 0.10);
+            border: 1px solid black;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            color:#F04037;
+        }
+        .section-four {
+            height: 155px;
+            width: 299px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+        }
+        .icon-four {
+            width: 69px;
+            height: 69px;
+            display: flex;
+            background-color: rgba(254, 220, 90, 0.10);
+            border: 1px solid black;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        .section-five {
+            height: 155px;
+            width: 299px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+        }
+        .icon-five {
+            width: 69px;
+            height: 69px;
+            display: flex;
+            background-color: rgba(84, 84, 212, 0.10);
+            border: 1px solid black;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            color:#F04037;
+        }
+        .section-six {
+            height: 155px;
+            width: 299px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+        }
+        .icon-six {
+            width: 69px;
+            height: 69px;
+            display: flex;
+            background-color: rgba(240, 64, 55, 0.10);
+            border: 1px solid black;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            color:#F04037;
+        }
+        .page4{
+            margin: 0;
+            height: 869px;
+            width: 1440px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .header2{
+            height: 147px;
+            width: 1200px;
+            display: flex;
+            justify-content: start;
+            align-items: end;
+        }
+        .header2 h2{
+            color: #FFF;
+            font-size: 58px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+        .box2 {
+            height: 310px;
+            width: 1200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .box2 img{
+            width: 336px;
+            height: 253px;
+            flex-shrink: 0;
+            border-radius: 12px;
+            background: lightgray 50% / cover no-repeat;
+            justify-content: center;
+        }
+
+        .section-seven {
+            width: 384px;
+            height: 301px;
+            flex-shrink: 0;
+            display:flex;
+            border-radius: 14px;
+            background-color: #1E1E20;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .section-eight {
+            width: 384px;
+            height: 301px;
+            flex-shrink: 0;
+            display:flex;
+            border-radius: 14px;
+            background-color: #1E1E20;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .section-nine {
+            width: 384px;
+            height: 301px;
+            flex-shrink: 0;
+            display:flex;
+            border-radius: 14px;
+            background-color: #1E1E20;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .page5{
+            margin:0;
+            height: 696px;
+            width: 1440px;
+            background-size:cover;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-wrap: wrap;
+        }
+        .section1{
+            margin-top: 250px;
+            height: 506px;
+            width:1440px;
+            background-color:rgba(30, 30, 32, 0.50);
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .section1 h2{
+            margin: 0;
+            color: #FFF;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            align-items: center;
+            text-align: left;
+        }
+        .button3{
+            margin-top:50px;
+            width: 201px;
+            height: 60px;
+            flex-shrink: 0;
+            background-color:#5454D4;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            text-align: center;
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .section2{
+            height: 190px;
+            width: 1200px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .favicon2 {
+            height: 40px;
+            width: 124px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section2 p{
+            color: rgba(255, 255, 255, 0.70);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 38px; /* 237.5% */
+            letter-spacing: -0.5px;
+        }
+        .favicon2 img{
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            background: #19191B;
+        }
+
+        .section2 h2{
+            color: #FFF;
+            font-family: "Montserrat", sans-serif;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 39.2px */
+        }
+    </style>
+</head>
+<body>
+<div class="flex">
+    <div class="page1">
+        <div class="header">
+            <div class="favicon">
+                <img src="https://s3-alpha-sig.figma.com/img/2d41/4e6f/aa8cb7873c9b8d6294e697a5db1a664b?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MaVGPx~-4MJ9QQJTxl7YpRHIZnr1EJEliWsri5VOszKdI~ZmZABUPjcN3TPQEcFqhcrblbxy~KLLAec32Cx~hwwpLG39j-Lc4LLMY9XsnY-BG-crVWrU6iLVV~IiyEgCNBeBAjqu789U2Xkpd95GH-1uEHUhflnEfTbk6YlQnD1JA3D68c2W0c4lUHLI6HfBIF4g18rmwk8kd2PT5z0vZqhhDjFYS1u~nIIfAli07TnAWlbGxm5Lde2pcXc5okZo3is91O040C-CeYFQxvdVZVCBjbwaJs~~MbuRXlpZ1WSSE5fUnKUAqP4MS6k6bsLpy6Wj7zCb1rE1rKDObO5t5A__"/alt="favicon" height="40" width="40">
+                <h2>Enver</h2>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Our project</a>
+                <a href="#">About us</a>
+            </nav>
+            <div class="button">Contact us</div>
+        </div>
+        <div class="main">
+            <h1>Build Your<br>
+                Awesome<br>
+                Platform</h1>
+            <p>Enver studio is a digital studio that offers several services such<br> as UI/UX Design to developers, we will provide the best<br> service for those of you who use our services.</p>
+            <div class="button2">Our services</div>
+        </div>
+        <img src="Group 162549 1.png"/alt="Picture 1" height="713" width="656"  style="margin-top: 107px; margin-right: 52px;"/>
+    </div>
+    <div class="page2">
+        <div class="header1">
+            <h2>Why Enver Is The<br> Best Choice?</h2>
+            <p>Watch this one minute video so you understand why you should use<br> our services!</p>
+
+        </div>
+        <img src="Group-2.png"/alt="Picture 2" height="670" width="1200"/>
+    </div>
+    <div class="page3">
+        <h2>The Service We Provide<br> For You</h2>
+        <div class="box">
+            <div class="section-one">
+                <div class="icon-one">
+                    <img src="code2.png"
+                         alt="The first picture"/>
+                </div>
+                <h4>Development</h4>
+                <p>Create a platform with the best and <br>coolest quality from us.<p>
+            </div>
+            <div class="section-two">
+                <div class="icon-two">
+                    <img src="layer.png"
+                         alt="The second picture"/>
+                </div>
+                <h4>UI/UX Designer</h4>
+                <p>We provide UI/UX Design services,<br> and of course with the best quality<p>
+            </div>
+            <div class="section-three">
+                <div class="icon-three">
+                    <img src="code.png"
+                         alt="The third picture"/>
+                </div>
+                <h4>Graphik Designer</h4>
+                <p>We provide Graphic Design <br>services, with the best designers<p>
+            </div>
+            <div class="section-four">
+                <div class="icon-four">
+                    <img src="align-vertically.png"
+                         alt="The fourth picture"/>
+                </div>
+                <h4>Motion Graphik</h4>
+                <p>Create a platform with the best and <br>coolest quality from us.<p>
+            </div>
+            <div class="section-five">
+                <div class="icon-five">
+                    <img src="camera.png"
+                         alt="The fifth picture"/>
+                </div>
+                <h4>Photography</h4>
+                <p>We provide Photography services, <br>and of course with the best quality<p>
+            </div>
+            <div class="section-six">
+                <div class="icon-six">
+                    <img src="video-play.png"
+                         alt="The third picture"/>
+                </div>
+                <h4>Videography</h4>
+                <p>Create a platform with the best and <br>coolest quality from us.<p>
+            </div>
+        </div>
+        <div class="page4">
+            <div class="header2">
+                <h2>Our Awesome Portofolio</h2>
+            </div>
+            <div class="box2">
+                <div class="section-seven">
+                    <div>
+                        <img src="image 29.png"
+                             alt="The first picture"/>
+                    </div>
+                </div>
+                <div class="section-eight">
+                    <div>
+                        <img src="image 28.png"
+                             alt="The second picture"/>
+                    </div>
+                </div>
+                <div class="section-nine">
+                    <div>
+                        <img src="image 30.png"
+                             alt="The third picture"/>
+                    </div>
+                </div>
+                <div class="page5">
+                    <div class="section1">
+                        <h2>Contact us for the service you<br>want to use</h2>
+                        <div class="button3">Contact us</div>
+                    </div>
+                    <div class="section2">
+                        <div class="favicon2">
+                            <img src="https://s3-alpha-sig.figma.com/img/2d41/4e6f/aa8cb7873c9b8d6294e697a5db1a664b?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MaVGPx~-4MJ9QQJTxl7YpRHIZnr1EJEliWsri5VOszKdI~ZmZABUPjcN3TPQEcFqhcrblbxy~KLLAec32Cx~hwwpLG39j-Lc4LLMY9XsnY-BG-crVWrU6iLVV~IiyEgCNBeBAjqu789U2Xkpd95GH-1uEHUhflnEfTbk6YlQnD1JA3D68c2W0c4lUHLI6HfBIF4g18rmwk8kd2PT5z0vZqhhDjFYS1u~nIIfAli07TnAWlbGxm5Lde2pcXc5okZo3is91O040C-CeYFQxvdVZVCBjbwaJs~~MbuRXlpZ1WSSE5fUnKUAqP4MS6k6bsLpy6Wj7zCb1rE1rKDObO5t5A__"/alt="favicon">
+                            <h2>Enver</h2>
+                        </div>
+                        <p>© 2024 Enver, All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
